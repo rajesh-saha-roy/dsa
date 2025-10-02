@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
 void problem1(int i, int n){
     if(i>n) return;
     cout << "Sarah" << '\n';
@@ -105,7 +104,7 @@ void problem12(int i, vector<int>& ds ,vector<int>& a, int n){
     // not picked
     problem12(i+1, ds, a, n);
 }
-// tc: O(n*2^n)
+// tc: O(2^n * n)
 // sc: O(n)
 // for array of size n, number of subsequences is 2^n
 
@@ -125,7 +124,7 @@ void problem13(int i, vector<int>& ds, int sum, int k, vector<int>& a, int n){
     // not picked
     problem13(i+1, ds, sum, k, a, n);
 }
-// tc : O(n*2^n)
+// tc : O(2^n * n)
 // sc: O(n)
 
 bool problem14(int i, vector<int> &ds, int sum, int k, vector<int> &a, int n){
@@ -148,7 +147,7 @@ bool problem14(int i, vector<int> &ds, int sum, int k, vector<int> &a, int n){
     if(problem14(i+1, ds, sum, k, a, n) == true) return true;
     return false;
 }
-// tc : O(n*2^n)
+// tc : O(2^n * n)
 // sc: O(n)
 
 int problem15(int i, int sum, int k, vector<int> &a, int n){
